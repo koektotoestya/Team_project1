@@ -19,9 +19,9 @@ void add_note() {
 	out << "0";
 	out.close();
 }
+
 void is_complete() {
 	string file, line;
-	char isComplete = '0';
 	cout << "Enter note name" << endl;
 	cin >> file;
 	file += ".txt";
@@ -30,7 +30,6 @@ void is_complete() {
 	{
 		while (getline(in, line))
 		{
-			// cout << line << endl;
 		}
 	}
 
@@ -83,7 +82,6 @@ void delete228() {
 	remove(file.c_str());
 }
 
-
 void show_note() {
 	string file, line;
 	cout << "Enter note name" << endl;
@@ -94,10 +92,8 @@ void show_note() {
 		getline(in, line);
 		cout << line << endl;
 	}
+	in.close();
 }
-
-
-
 
 int main() {
 	string userCommand, line, fileName;
@@ -117,9 +113,4 @@ int main() {
 	else if ((userCommand == "show_note") || (userCommand == "Show_note")) {
 		show_note();
 	}
-
-
-
-
-	
 }
