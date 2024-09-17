@@ -96,6 +96,12 @@ void show_note() {
 }
 
 int main() {
+	cout << "List of commands:" << endl;
+	cout << "add_note" << endl;
+	cout << "is_complete" << endl;
+	cout << "edit_mainbody" << endl;
+	cout << "delete" << endl;
+	cout << "show_note" << endl;
 	string userCommand, line, fileName;
 	cin >> userCommand;
 	if ((userCommand == "add_note") || (userCommand == "Add_note")) {
